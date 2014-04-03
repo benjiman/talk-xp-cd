@@ -38,9 +38,31 @@ body {
 	margin-left: -500px !important;
 }
 
+.reveal .title h1 {
+  font-size: 100px;
+  padding-bottom: 50px;
+}
+
+.title  {
+    text-align: left;
+}
+
+section.left >h2 {
+	text-align: left;
+	margin-left: 240px;
+	display: block;
+}
+
+section.title {
+    padding-left: 50px;
+}
 
 section.big > h2:first-child {
 	margin-top: 0;
+}
+
+section.big > img {
+	margin-top: 50px !important;
 }
 
 .slides h1:first-child
