@@ -1,230 +1,230 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Continuous Delivery at Unruly</title>
+    <title>Continuous Delivery at Unruly</title>
 
-		<meta name="description" content="Continuous Delivery at Unruly">
-		<meta name="author" content="Benjamin Weber &amp; Alex Wilson">
+    <meta name="description" content="Continuous Delivery at Unruly">
+    <meta name="author" content="Benjamin Weber &amp; Alex Wilson">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/benji.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/benji.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
-				<section class="title">
-					<h1>Big Ideas<br/> Small Company<br/> Moderate Heresy</h1>
-					<h3>Scaling Continuous Delivery at Unruly</h3>
-					<p>
-						<small>Alex Wilson &amp; Benji Weber  |  Pipeline 2014</small>
-					</p>
-				</section>
-				<section class="left">
-					<h2>@pr0bablyfine</h2>
-					<h2>@benjiweber</h2>
-				</section>
-				<section>
-					<h2>Unruly</h2>
-					<p>http://www.unrulymedia.com/</p>
-				</section>
-				<section>
-					<h2>Continuous Delivery and Us</h2>
-					<ul>
-						<li>How we work</li>
-						<li>Why it works</li>
-						<li>Scaling Infrastructure</li>
-						<li>Scaling Development</li>
-					</ul>
-				</section>
-				<section>
-					<h2>How we work&hellip;</h2>
-				</section>
-				<section>
-					<h2>eXtreme Programming</h2>
-				</section>	
-				<section>
-					<h2>Feedback Loops</h2>
-					<ul>
-						<li>Pairing</li>
-						<li>TDD</li>
-						<li>Customer</li>
-						<li>Deploy</li>
-					</u>
-				</section>
-				<section>
-					<h2>Iterations &amp; Release Planning</h2>
-					<p><em>"Plan releases once a quarter. Plan iterations more frequently"</em> <br/>(XP Explained)</p>
-					<p ><br/>We do none of these things</p>
-				</section>
-				<section>
-					<h2>Goal</h2>
-					<p>Deliver value as quickly as possible</p>
-					<p>Minimise time from conception to value</p>
-				</section>
-				
-				<section class="big">
-					<h2>Value Stream</h2>
-					<img src="0_book_value_stream.png"/>
-				</section>
-				<section class="big">
-					<h2>Accelerated Value Stream</h2>
-					<img src="1_accellerated_value_stream.png" style="width: 800px;"/>
-				</section>
-				
-				<section class="big">
-					<h2>Normal Value Stream</h2>
-					<img src="2_normal_value_stream.png" style="margin-top: 0 !important"/>
-				</section>
-				
-				<section>
-					<h2>Definition of done</h2>
-					<p><strike>When tests pass</strike></p>
-					<p><strike>When integrated</strike></p>
-					<p><strike>When deployable build</strike></p>
-					<p><strike>When deployed</strike></p>
-					<p style="font-size: 120%">When measurably delivering value</p>
-				</section>
-				
-				<section class="big">
-					<h2>Deploy Pipeline</h2>
-					<img src="book_deployment_pipeline.png" class="nomargin">
-				</section>
-				
-				<section class="big">
-					<h2>Waterfall in a Tube</h2>
-					<img src="waterfall_in_a_tube.jpg" class="nomargin" style="height: 500px;"/>
-				</section>
-				
-				<section class="big">
-					<h2>Gate Metaphor</h2>
-					<img src="gate.png"/>
-				</section>
+        <section class="title">
+          <h1>Big Ideas<br/> Small Company<br/> Moderate Heresy</h1>
+          <h3>Scaling Continuous Delivery at Unruly</h3>
+          <p>
+            <small>Alex Wilson &amp; Benji Weber  |  Pipeline 2014</small>
+          </p>
+        </section>
+        <section class="left">
+          <h2>@pr0bablyfine</h2>
+          <h2>@benjiweber</h2>
+        </section>
+        <section>
+          <h2>Unruly</h2>
+          <p>http://www.unrulymedia.com/</p>
+        </section>
+        <section>
+          <h2>Continuous Delivery and Us</h2>
+          <ul>
+            <li>How we work</li>
+            <li>Why it works</li>
+            <li>Scaling Infrastructure</li>
+            <li>Scaling Development</li>
+          </ul>
+        </section>
+        <section>
+          <h2>How we work&hellip;</h2>
+        </section>
+        <section>
+          <h2>eXtreme Programming</h2>
+        </section>  
+        <section>
+          <h2>Feedback Loops</h2>
+          <ul>
+            <li>Pairing</li>
+            <li>TDD</li>
+            <li>Customer</li>
+            <li>Deploy</li>
+          </u>
+        </section>
+        <section>
+          <h2>Iterations &amp; Release Planning</h2>
+          <p><em>"Plan releases once a quarter. Plan iterations more frequently"</em> <br/>(XP Explained)</p>
+          <p ><br/>We do none of these things</p>
+        </section>
+        <section>
+          <h2>Goal</h2>
+          <p>Deliver value as quickly as possible</p>
+          <p>Minimise time from conception to value</p>
+        </section>
+        
+        <section class="big">
+          <h2>Value Stream</h2>
+          <img src="0_book_value_stream.png"/>
+        </section>
+        <section class="big">
+          <h2>Accelerated Value Stream</h2>
+          <img src="1_accellerated_value_stream.png" style="width: 800px;"/>
+        </section>
+        
+        <section class="big">
+          <h2>Normal Value Stream</h2>
+          <img src="2_normal_value_stream.png" style="margin-top: 0 !important"/>
+        </section>
+        
+        <section>
+          <h2>Definition of done</h2>
+          <p><strike>When tests pass</strike></p>
+          <p><strike>When integrated</strike></p>
+          <p><strike>When deployable build</strike></p>
+          <p><strike>When deployed</strike></p>
+          <p style="font-size: 120%">When measurably delivering value</p>
+        </section>
+        
+        <section class="big">
+          <h2>Deploy Pipeline</h2>
+          <img src="book_deployment_pipeline.png" class="nomargin">
+        </section>
+        
+        <section class="big">
+          <h2>Waterfall in a Tube</h2>
+          <img src="waterfall_in_a_tube.jpg" class="nomargin" style="height: 500px;"/>
+        </section>
+        
+        <section class="big">
+          <h2>Gate Metaphor</h2>
+          <img src="gate.png"/>
+        </section>
 
-				<section class="big">
-					<h2>Shorten Pipeline</h2>
-					<img src="shorten_pipeline.png"/>
-				</section>
-				
-				<section>
-					<h2>Automate all the Things</h2>
-					<ul>
-						<li>Acceptance</li>
-						<li>Integration</li>
-						<li>Component/Unit</li>
-						<li>Performance</li>
-						<li>&hellip;</li>
-					</ul>
-				</section>
-				
-				<section>			
-					<h2>Move tests post deploy</h2>
-					<ul>
-						<li>Monitoring</li>
-						<li>What &amp; Why broken</li>
-						<li>Fix rapidly</li>
-						<li>NagDD</li>
-					</ul>
-				</section>
+        <section class="big">
+          <h2>Shorten Pipeline</h2>
+          <img src="shorten_pipeline.png"/>
+        </section>
+        
+        <section>
+          <h2>Automate all the Things</h2>
+          <ul>
+            <li>Acceptance</li>
+            <li>Integration</li>
+            <li>Component/Unit</li>
+            <li>Performance</li>
+            <li>&hellip;</li>
+          </ul>
+        </section>
+        
+        <section>      
+          <h2>Move tests post deploy</h2>
+          <ul>
+            <li>Monitoring</li>
+            <li>What &amp; Why broken</li>
+            <li>Fix rapidly</li>
+            <li>NagDD</li>
+          </ul>
+        </section>
 
-				<section class="big">
-					<h2>TDD-D</h2>
-					<img src="red_green_refactor_deploy_feedback.png" class="nomargin"/>
-				</section>
+        <section class="big">
+          <h2>TDD-D</h2>
+          <img src="red_green_refactor_deploy_feedback.png" class="nomargin"/>
+        </section>
 
-				<section>
-					<h2>Synchronous</h2>
-					<ul>
-						<li>Deploy &amp; Feedback</li>
-						<li>Inform next change</li>
-						<li>Motivation to keep deploy fast</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Consequence</h2>
-					<p>No CI Server</p>
-				</section>
-				
-				<section>
-					<h2>Promotion</h2>
-					<p><strike>Business</strike> Dev decides when to deploy</p>
-					<ul>
-						<li>Feature Toggles</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>UAT in Production</h2>
-					<ul>
-						<li>Global Org</li>
-						<li>Production-like data</li>
-						<li>Production-like infra</li>
-						<li>Performance feedback early</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Accessible Customer</h2>
-					<p>Essential</p>
-				</section>
-				
-				<section>
-					<h2>Continuous <strike>Delivery</strike> Deployment</h2>
-					<p><strike>Every build is capable of being deployed</strike></p>
-					<p>Every push is deployed</p>
-					<ul>
-						<li>Simplifying</li>
-						<li>Non-event</li>
-						<li>After beer o'clock</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Branching</h2>
-					<ul>
-						<li>No long lived feature branches</li>
-						<li>No pushed branches</li>
-						<li>Real CI</li>
-						<li>Integrate with users and data</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Roll <strike>Back</strike> Forward</h2>
-				</section>
-				
-				<section>
-					<h2>Questions so far?</h2>
-				</section>
-				
-	<!-- CULTURE -->
-				
+        <section>
+          <h2>Synchronous</h2>
+          <ul>
+            <li>Deploy &amp; Feedback</li>
+            <li>Inform next change</li>
+            <li>Motivation to keep deploy fast</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Consequence</h2>
+          <p>No CI Server</p>
+        </section>
+        
+        <section>
+          <h2>Promotion</h2>
+          <p><strike>Business</strike> Dev decides when to deploy</p>
+          <ul>
+            <li>Feature Toggles</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>UAT in Production</h2>
+          <ul>
+            <li>Global Org</li>
+            <li>Production-like data</li>
+            <li>Production-like infra</li>
+            <li>Performance feedback early</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Accessible Customer</h2>
+          <p>Essential</p>
+        </section>
+        
+        <section>
+          <h2>Continuous <strike>Delivery</strike> Deployment</h2>
+          <p><strike>Every build is capable of being deployed</strike></p>
+          <p>Every push is deployed</p>
+          <ul>
+            <li>Simplifying</li>
+            <li>Non-event</li>
+            <li>After beer o'clock</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Branching</h2>
+          <ul>
+            <li>No long lived feature branches</li>
+            <li>No pushed branches</li>
+            <li>Real CI</li>
+            <li>Integrate with users and data</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Roll <strike>Back</strike> Forward</h2>
+        </section>
+        
+        <section>
+          <h2>Questions so far?</h2>
+        </section>
+        
+  <!-- CULTURE -->
+        
         <!-- INFRASTRUCTURE GOES HERE -->
 
         <section>
@@ -318,38 +318,38 @@
           <br/>
           <h2>Any questions?</h2>
         </section>
-	
-			</div>	
+  
+      </div>  
 
-		</div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
