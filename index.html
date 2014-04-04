@@ -259,7 +259,7 @@
 
         <section>
           <h2>Devs On Call</h2>
-          <p>No blame culture. Everyone messes up at some point</p>
+          <p>Freedom and Responsibility</p>
         </section>
 
         <section>
@@ -293,6 +293,9 @@
         <section class="divider">
           <h2>Infrastructure Challenges</h2>
         </section>
+        <section>
+          <h2>1-100 Servers</h2>
+        </section>
         
         <!-- INFRASTRUCTURE GOES HERE -->
 
@@ -309,17 +312,48 @@
           <p>More frequent machine death during growth</p>
         </section>
         <section>
-          <h2>Forced automation</h2>
-          <p>Any project's first step - deploy "Hello World"</p>
-        </section>
-        <section>
           <h2>Continuous Disposal</h2>
           <p>Caught out by assuming servers were rebuildable - they weren't</p>
         </section>
         <section>
+          <h2>First Day</h2>
+          <p>Any project's first step - deploy "Hello World"</p>
+        </section>
+
+        <section>
           <h2>TDD (sort of)</h2>
           <p>Unit-testing less useful</p>
           <p>Acceptance testing much more informative</p>
+        </section>
+        <section class="big">
+          <h2>Acceptance Testing</h2>
+          <pre class="prettyprint">
+@test "apache should redirect to https" {
+    run curl http://analytics.unrulymedia.com/ 
+    [ "$status" -eq 0 ]
+    echo "$output" | grep -q '< Location: https://analytics.unrulymedia.com/'
+}
+          </pre>
+        </section>
+        <section class="big">
+          <h2>Module Testing</h2>
+          <pre class="prettyprint">
+@RunWith(ServerSpec.class)
+public class AnalyticsWeb {{
+    describe(service("httpd"), it -> {
+        it.should(be.enabled);
+        it.should(be.running);
+    });
+
+    describe(port(80), it -> {
+        it.should(be.listening);
+    });
+
+    describe(port(443), it -> {
+        it.should(be.listening);
+    });
+}}
+          </pre>
         </section>
         <section>
           <h2>Gating Infra</h2>
@@ -332,6 +366,9 @@
           <p>Teams needed to collaborate on cross-team infra issues</p>
         </section>
         <section>
+          <h2>PuppetDB</h2>
+        </section>
+        <section>
           <h2>Reduce Variance, Increase Mean</h2>
           <p>Homogenous systems are easier to reason about.</p>
           <p>MTBF becomes less important than MTTR</p>
@@ -340,10 +377,13 @@
           <h2>As Above, So Below</h2>
           <p>Managing shared workstations is harder - conflict of interests</p>
         </section>
+        <section>
+          <h2>Cronned code deletion</h2>
+        </section>
 
         <!-- TEAM/PRODUCT SCALING -->
         <section class="divider">
-          <h2>Team Scaling Challenges</h2>
+          <h2>Dev Scaling Challenges</h2>
         </section>
         
         <section>
@@ -369,8 +409,11 @@
           <p>Deploy speed vs Dependency Hell</p>
         </section>
         <section>
-          <h2>Deploy Speed &amp; Reliability</h2>
-          <p>Continual Investment</p>
+          <h2>State</h2>
+        </section>
+        <section>
+          <h2>Continuous Investment</h2>
+          <p>Deploy Speed &amp; Reliability</p>
         </section>
         <section>
           <h2>@QuarantineRule</h2>
