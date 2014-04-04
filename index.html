@@ -62,7 +62,11 @@
             <li>Scaling Development</li>
           </ul>
         </section>
-        <section>
+        <section class="big">
+          <h2 style="line-height:1.2em;">Careful &amp; Considered <br/>Approach</h2>
+          <img src="probably_fine.gif" style="width:600px;"/>
+        </section>
+        <section class="divider">
           <h2>How we work&hellip;</h2>
         </section>
         <section>
@@ -80,7 +84,7 @@
         <section>
           <h2>Iterations &amp; Release Planning</h2>
           <p><em>"Plan releases once a quarter. Plan iterations more frequently"</em> <br/>(XP Explained)</p>
-          <p ><br/>We do none of these things</p>
+          <p style="font-size: 130%"><br/>We do none of these things</p>
         </section>
         <section>
           <h2>Goal</h2>
@@ -143,7 +147,7 @@
         </section>
         
         <section>      
-          <h2>Move tests post deploy</h2>
+          <h2>Move Tests Post-Deploy</h2>
           <ul>
             <li>Monitoring</li>
             <li>What &amp; Why broken</li>
@@ -183,8 +187,7 @@
           <h2>UAT in Production</h2>
           <ul>
             <li>Global Org</li>
-            <li>Production-like data</li>
-            <li>Production-like infra</li>
+            <li>Production-like</li>
             <li>Performance feedback early</li>
           </ul>
         </section>
@@ -198,11 +201,7 @@
           <h2>Continuous <strike>Delivery</strike> Deployment</h2>
           <p><strike>Every build is capable of being deployed</strike></p>
           <p>Every push is deployed</p>
-          <ul>
-            <li>Simplifying</li>
-            <li>Non-event</li>
-            <li>After beer o'clock</li>
-          </ul>
+          <p>Even after beer o'clock</p>
         </section>
         
         <section>
@@ -219,95 +218,28 @@
           <h2>Roll <strike>Back</strike> Forward</h2>
         </section>
         
-  <!-- CULTURE -->
-        
-				<section>
-					<h2>Synchronous</h2>
-					<ul>
-						<li>Deploy &amp; Feedback</li>
-						<li>Inform next change</li>
-						<li>Motivation to keep deploy fast</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Consequence</h2>
-					<p>No CI Server</p>
-				</section>
-				
-				<section>
-					<h2>Promotion</h2>
-					<p><strike>Business</strike> Dev decides when to deploy</p>
-					<ul>
-						<li>Feature Toggles</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>UAT in Production</h2>
-					<ul>
-						<li>Global Org</li>
-						<li>Production-like data</li>
-						<li>Production-like infra</li>
-						<li>Performance feedback early</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Accessible Customer</h2>
-					<p>Essential</p>
-				</section>
-				
-				<section>
-					<h2>Continuous <strike>Delivery</strike> Deployment</h2>
-					<p><strike>Every build is capable of being deployed</strike></p>
-					<p>Every push is deployed</p>
-					<ul>
-						<li>Simplifying</li>
-						<li>Non-event</li>
-						<li>After beer o'clock</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Branching</h2>
-					<ul>
-						<li>No long lived feature branches</li>
-						<li>No pushed branches</li>
-						<li>Real CI</li>
-						<li>Integrate with users and data</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Roll <strike>Back</strike> Forward</h2>
-				</section>
-				
         <!-- CULTURE -->
 				
         <section class="big">
           <h2>Siloing Is Bad</h2>
           <img src="a0_siloed.png" class="nomargin"/>
         </section>
-
+        
         <section class="big">
-          <h2>Generalists over Specialists</h2>
-          <br/>
-          <br/>
-          <p>Specialists help generalists do better</p>
-          <br/>
-          <br/>
-          <img src="a2_crossfunctional_teams.png"/>
+          <h2>Split by Product</h2>
+          <img src="a1_product_teams.png"/>
         </section>
 
         <section class="big">
-          <h2>Scaling a Product Team</h2>
-          <br/>
-          <br/>
+          <h2>Generalists over Specialists</h2>
+          
+          <p>Specialists help generalists do better</p>
+          <img src="a2_crossfunctional_teams.png"/>
+        </section>
+
+        <section>
+          <h2>Product Team</h2>
           <p>Didn't work - became a bottleneck</p>
-          <br/>
-          <br/>
-          <img src="a1_product_teams.png"/>
         </section>
 
         <section>
@@ -340,11 +272,6 @@
           </ul>
         </section>
 
-        <section class="big">
-          <h2>Questions so far?</h2>
-          <img src="any_questions.png" style="width:800px;"/>
-        </section>
-
         <section>
           <h2>Self-improvement</h2>
           <ul>
@@ -354,10 +281,15 @@
           </ul>
         </section>
 
-        <section>
-          <h2>Questions so far?</h2>
+        <section class="big" style="background-color: black; background-image: url(any_questions.png); background-size: 100%; display: block; background-position: 0 0; background-repeat: no-repeat no-repeat;">
+          <h2 style="color: white; display: block; position: relative; left: 300px; top: 350px; width: 600px; line-height: 1.1em; font-size: 450%; text-align: right;   text-shadow: 0 2px 2px rgba(1, 1, 1, .5);">Questions so far?</h2>
         </section>
 
+
+        <section class="divider">
+          <h2>Infrastructure Challenges</h2>
+        </section>
+        
         <!-- INFRASTRUCTURE GOES HERE -->
 
         <section>
@@ -406,17 +338,27 @@
         </section>
 
         <!-- TEAM/PRODUCT SCALING -->
-
-        <section>
-          <h2>Scaling Products/Teams</h2>
-          <p>Break up teams - use Conway's Law to advantage</p>
-          <p>Project boundaries (easy)</p>
-          <p>Well-defined APIs (harder)</p>
+        <section class="divider">
+          <h2>Team Scaling Challenges</h2>
         </section>
+        
+        <section>
+          <h2>Existing project boundaries</h2>
+        </section>
+        
+        <section>
+          <h2>Conway's Law</h2>
+          <p>Take advantage</p>
+        </section>
+        
+        <section>
+          <h2>API Tradeoff</h2>
+        </section>
+        
+        
         <section>
           <h2>Split as you need to</h2>
-          <p>Predetermined boundaries = premature optimisation.</p>
-          <p>Rule 1.</p>
+          <p>You know least when you start</p>
         </section>
         <section>
           <h2>Monolith vs MicroServices</h2>
@@ -424,43 +366,44 @@
         </section>
         <section>
           <h2>Deploy Speed &amp; Reliability</h2>
-          <p>1% of tests failing becomes less acceptable</p>
-          <p>Quarantine and diagnose nondeterministic failures</p>
+          <p>Continual Investment</p>
         </section>
         <section>
-          <h2>Shared Ownership vs Freedom</h2>
+          <h2>@QuarantineRule</h2>
+          <p>0.1% failure rate is annoying with 100 tests</p>
+          <p>0.1% failure rate is impossible with 10,000 tests</p>
+        </section>
+        <section>
+          <h2 style="line-height: 1.2em; margin-top: 180px;">Shared Ownership <br/>vs<br/> Freedom</h2>
         </section>
 
         <!-- THE GRAND FINALE -->
 
-        <section>
-          <h2>Core Values</h2>
-          <p>Short pipeline</p>
-          <p>Fast feedback</p>
-          <p>Early value</p>
+        <section class="divider">
+          <h2 style="display: inline-block; text-align: left; margin-left: 30px; position: relative; left: -40px;">Core <br/>Values</h2>
+          <p style="display: inline-block; text-align: right; color: white; font-size: 220%;">
+          Short pipeline<br/>
+          Fast feedback</br>
+          Early value</br>
+          </p>
         </section>
-
-        <section>
-          <h2>We're Hiring</h2>
-          <p>talent@unrulymedia.com</p>
-        </section>
-
-        <section class="big">
-        <br/>
         
-<br/><br/><br/>
+        <section class="big">
+<br/><br/>
           <h2>Thanks for Listening</h2>
           <br/>
-          <h2>Any questions?</h2>
-          <br/>
-          <br/>
+          <h1>Any Questions?</h1>
           <br/>
           
-          <p>
+          <br/>
+          <p>Heckle us on Twitter &ndash;
             @pr0bablyfine
             @benjiweber
           </p>
-          <p>We're hiring - talent@unrulymedia.com</p>
+          
+          <br/>
+          <br/>
+          <p style="font-size: 75%;">We're hiring &ndash; talent@unrulymedia.com</p>
         </section>
   
       </div>  
