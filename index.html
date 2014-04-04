@@ -17,9 +17,9 @@
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="run_prettify.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+    <link href='ubuntu.css' rel='stylesheet' type='text/css'>
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -246,9 +246,10 @@
           <p>Didn't work - became a bottleneck</p>
         </section>
 
-        <section>
-          <h2>Shared Ownership</h2>
-          <ul>
+        <section class="big">
+          <h2>Collective Ownership</h2>
+          <img src="borg.jpg" style="float:left; width:500px;"/>
+          <ul style="margin-top: 100px;">
             <li>Code</li>
             <li>Tests</li>
             <li>Requirements</li>
@@ -257,9 +258,10 @@
           </ul>
         </section>
 
-        <section>
-          <h2>Devs On Call</h2>
+        <section class="big">
+          <h2 style="margin-top: 100px;">Devs On Call</h2>
           <p>Freedom and Responsibility</p>
+          <img src="phone.png" style="width: 300px;"/>
         </section>
 
         <section>
@@ -365,18 +367,18 @@ public class AnalyticsWeb {{
           <p>Everyone assumed everyone else cared; everyone suffered</p>
           <p>Teams needed to collaborate on cross-team infra issues</p>
         </section>
-        <section>
+        <!--section>
           <h2>PuppetDB</h2>
-        </section>
+        </section-->
         <section>
           <h2>Reduce Variance, Increase Mean</h2>
           <p>Homogenous systems are easier to reason about.</p>
           <p>MTBF becomes less important than MTTR</p>
         </section>
-        <section>
+        <!--section>
           <h2>As Above, So Below</h2>
           <p>Managing shared workstations is harder - conflict of interests</p>
-        </section>
+        </section-->
         <section>
           <h2>Cronned code deletion</h2>
         </section>
@@ -392,7 +394,8 @@ public class AnalyticsWeb {{
         
         <section>
           <h2>Conway's Law</h2>
-          <p>Take advantage</p>
+          <p><em>"organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations"</em></p>
+          <p>Take advantage</p>          
         </section>
         
         <section>
@@ -420,8 +423,9 @@ public class AnalyticsWeb {{
           <p>0.1% failure rate is annoying with 100 tests</p>
           <p>0.1% failure rate is impossible with 10,000 tests</p>
         </section>
-        <section>
-          <h2 style="line-height: 1.2em; margin-top: 180px;">Shared Ownership <br/>vs<br/> Freedom</h2>
+        <section class="big">
+          <h2 style="line-height: 1.2em;">Collective Ownership <br/>vs<br/> Freedom</h2>
+          <img src="borg_cube.jpg" style="width: 350px;"/>
         </section>
 
         <!-- THE GRAND FINALE -->
