@@ -247,15 +247,21 @@
         </section>
 
         <section class="big">
-          <h2>Collective Ownership</h2>
-          <img src="borg.jpg" style="float:left; width:500px;"/>
-          <ul style="margin-top: 100px;">
+        
+         
+          <h2 style="margin-top: 100px;">Collective Ownership</h2>
+          <ul>
             <li>Code</li>
             <li>Tests</li>
+            <li style="list-style-type: none;">&nbsp;</li>
+          </ul>
+          <ul>
             <li>Requirements</li>
             <li>Ops</li>
             <li>Support</li>
           </ul>
+           <img src="borg.jpg" style="display: block; width:400px; margin-left: 250px;"/>
+          
         </section>
 
         <section class="big">
@@ -264,18 +270,20 @@
           <img src="phone.png" style="width: 300px;"/>
         </section>
 
-        <section>
-          <h2>Pair Programming</h2>
+        <section class="big">
+          <h2 style="margin-top: 100px;">Pair Programming</h2>
           <p>Real-time code review</p>
+          <img src="pairing.jpg" style="width:400px;"/>
         </section>
 
-        <section>
-          <h2>Cross-pollination</h2>
+        <section class="big">
+          <h2 style="margin-top: 100px;">Cross-pollination</h2>
           <ul>
-            <p>Internal tech-talks</p>
-            <p>Team rotation</p>
-            <p>Team <i>lead</i> rotation</p>
+            <li>Internal tech-talks</li>
+            <li>Team rotation</li>
+            <li>Team <i>lead</i> rotation</li>
           </ul>
+          <img src="pollen.jpg" style="width:400px; display: block; margin-left: 250px;"/>
         </section>
 
         <section>
@@ -297,6 +305,7 @@
         </section>
         <section>
           <h2>1-100 Servers</h2>
+          <img src="butt-to-cloud.png"/>
         </section>
         
         <!-- INFRASTRUCTURE GOES HERE -->
@@ -309,17 +318,19 @@
             <li>Tight feedback loop</li>
           </ul>
         </section>
-        <section>
+        <section style="background-color: white !important; background: url(snowflake.png); background-position: 270px 150px; background-size: 40%; background-repeat: no-repeat">
           <h2>Making snowflakes disposable</h2>
           <p>More frequent machine death during growth</p>
         </section>
         <section>
           <h2>Continuous Disposal</h2>
           <p>Caught out by assuming servers were rebuildable - they weren't</p>
+          <img src="recycling.jpg"/>
         </section>
         <section>
           <h2>First Day</h2>
           <p>Any project's first step - deploy "Hello World"</p>
+          <p>Deploy something, iteratively improve</p>
         </section>
 
         <section>
@@ -333,7 +344,8 @@
 @test "apache should redirect to https" {
     run curl http://analytics.unrulymedia.com/ 
     [ "$status" -eq 0 ]
-    echo "$output" | grep -q '< Location: https://analytics.unrulymedia.com/'
+    echo "$output" \
+        | grep -q '< Location: https://analyti…
 }
           </pre>
         </section>
@@ -362,10 +374,11 @@ public class AnalyticsWeb {{
           <p>Instances declared as test - ignored by monitors/measures</p>
           <p>Same people, different pipeline</p>
         </section>
-        <section>
+        <section class="big">
           <h2>Cross-team/Shared Infrastructure</h2>
           <p>Everyone assumed everyone else cared; everyone suffered</p>
           <p>Teams needed to collaborate on cross-team infra issues</p>
+          <img src="borat.jpg"/>
         </section>
         <!--section>
           <h2>PuppetDB</h2>

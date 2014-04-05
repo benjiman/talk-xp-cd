@@ -79,7 +79,9 @@ section.big > img.nomargin {
 	margin-top: 200px;	
 }
 
-
+pre.prettyprint {
+    font-size: 100%;
+}
 .reveal {
   font-family: Ubuntu, 'Lucida Grande', Lucida, Verdana, sans-serif;
   color: #666;
