@@ -69,6 +69,18 @@ section.big > img.nomargin {
 	margin-top: 0 !important;
 }
 
+section.medium > h2:first-child {
+  margin-top: 100px;
+}
+
+section.medium > img {
+  margin-top: 50px !important;
+}
+
+section.medium > img.nomargin {
+  margin-top: 0 !important;
+}
+
 .slides h1:first-child
 {
 	margin-top: 100px;	
