@@ -39,8 +39,8 @@ body {
 }
 
 .reveal .title h1 {
-  font-size: 100px;
-  padding-bottom: 50px;
+  font-size: 150px;
+  padding-bottom: 0px;
 }
 
 .title  {
@@ -83,7 +83,7 @@ section.medium > img.nomargin {
 
 .slides h1:first-child
 {
-	margin-top: 100px;	
+	margin-top: 30px;	
 }
 
 .slides h2:first-child
