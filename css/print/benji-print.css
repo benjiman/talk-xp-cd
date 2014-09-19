@@ -1,0 +1,157 @@
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and 
+   manipulate this file as you see fit. */
+
+
+/* SECTION 1: Set default width, margin, float, and
+   background. This prevents elements from extending 
+   beyond the edge of the printed page, and prevents
+   unnecessary background images from printing */
+* {
+	-webkit-print-color-adjust: exact; 
+}
+
+@page {
+	width: 29.7cm;
+	height: 21.0cm;
+	-webkit-print-color-adjust: exact; 
+
+}
+
+body {
+	font-size: 24pt;
+	width: 29.7cm;
+	height: 21.0cm;
+	border: 0;
+	margin: 0 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+	background-image: none;
+	-webkit-print-color-adjust: exact; 
+}
+
+html {
+	width: 29.7cm;
+	height: 21.0cm;
+	overflow: visible;
+	-webkit-print-color-adjust: exact; 
+	background-color: #eee;
+}
+
+/* SECTION 2: Remove any elements not needed in print. 
+   This would include navigation, ads, sidebars, etc. */
+.nestedarrow, 
+.controls, 
+.reveal .progress, 
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+/* SECTION 3: Set body font face, size, and color.
+   Consider using a serif font for readability. */
+body, p, td, li, div {
+	font-size: 18pt;
+}
+
+ul, li {
+		list-style-type: none;
+}
+
+/* SECTION 4: Set heading font face, sizes, and color.
+   Diffrentiate your headings from your body text.
+   Perhaps use a large sans-serif for distinction. */
+h1,h2,h3,h4,h5,h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+h1 {
+	font-size: 500%;
+}
+
+/* SECTION 5: Make hyperlinks more usable.
+   Ensure links are underlined, and consider appending
+   the URL to the end of the link for usability. */
+a:link, 
+a:visited {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* SECTION 6: more reveal.js specific additions by @skypanther */
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+
+	display: block;
+	overflow: visible;
+}
+.reveal .slides {
+ 	position: static; 
+
+	left: 0;
+	top: 0;
+	padding: auto;
+
+	overflow: visible;
+	display: block;
+
+	text-align: center;
+}
+
+.reveal .slides>section, .reveal .slides>section>section {
+	width: auto;
+	height: 16cm;
+	visibility: visible !important;
+	position: static !important;
+	page-break-after: always;
+	page-break-inside: avoid;
+	
+	display: block !important;
+	overflow: visible !important;
+	margin: 1cm !important;
+
+	padding: 50px !important;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+
+}
+.reveal section {
+	display: block !important;
+}
+.reveal section .fragment {
+	opacity: 1 !important;
+}
+.reveal img {
+	box-shadow: none;
+}
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+.reveal small a {
+	font-size: 16pt !important;
+}
+
+pre {
+    font-size: 9pt !important;
+}
+

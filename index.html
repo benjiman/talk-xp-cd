@@ -12,8 +12,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/benji.css" id="theme">
+    <script>
+	document.write( '<link rel="stylesheet" href="css/' + ( window.location.search.match( /print/gi ) ? 'notyours' : 'reveal' ) + '.css" id="theme">' );
+	document.write( '<link rel="stylesheet" href="css/theme/' + ( window.location.search.match( /print/gi ) ? 'benji' : 'benji' ) + '.css" id="theme">' );
+    </script>
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -22,9 +24,7 @@
     <link href='ubuntu.css' rel='stylesheet' type='text/css'>
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
+    <link rel="stylesheet" href="css/print/benji-print.css" type="text/css" media="print">
 
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
