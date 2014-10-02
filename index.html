@@ -68,7 +68,7 @@
         <section class="divider">
           <h2>How we work&hellip;</h2>
         </section>
-        <section style="display: block; background: url(http://benjiweber.co.uk/talks/ddd_javaone/xpexplained.jpg) 50% 50% / 55% 100% no-repeat black;">
+        <section style="display: block; background: url(xpexplained.jpg) 50% 50% / 55% 100% no-repeat black;">
         </section>  
         <section>
           <h2>Feedback Loops</h2>
@@ -89,7 +89,8 @@
           <p>Deliver value as quickly as possible</p>
           <p>Minimise time from conception to value</p>
         </section>
-        
+        <section style="display: block; background: url(cdbook.jpg) 50% 50% / 55% 100% no-repeat black;">
+        </section> 
         <section class="big">
           <h2>Value Stream</h2>
           <img src="0_book_value_stream.png"/>
@@ -159,21 +160,35 @@
           <img src="red_green_refactor_deploy_feedback.png" class="nomargin"/>
         </section>
 
-        <section>
+        <section class="big">
           <h2>Synchronous</h2>
           <ul>
             <li>Deploy &amp; Feedback</li>
             <li>Inform next change</li>
             <li>Motivation to keep deploy fast</li>
+            <img src="coffee.png" style="width:350px;"/>
           </ul>
         </section>
-        
-        <section class="medium">
-          <h2>Consequence</h2>
-          <p>No CI Server</p>
-          <img src="coffee.png" style="width:350px;"/>
+        <section class="big">
+          <h2>Who does CI?</h2>
+          <img src="teamcity.jpg" width="200"/><img src="jenkins.jpg" width="200"/><img src="bamboo.png" width="200"/><img src="circle.jpg" width="200"/><img src="travis.jpg" width="200"/><img src="codeship.jpg" width="200"/>
         </section>
-        
+        <section class="big">
+	  <h2>Continuous Isolation</h2>
+          <img src="teamcity.jpg" width="200"/><img src="jenkins.jpg" width="200"/><img src="bamboo.png" width="200"/><img src="circle.jpg" width="200"/><img src="travis.jpg" width="200"/><img src="codeship.jpg" width="200"/>
+        </section>
+        <section>
+          <h2>No CI Server</h2>
+        </section>
+        <section>
+          <h2>No Branching</h2>
+          <ul>
+            <li>No long lived feature branches</li>
+            <li>No pushed branches</li>
+            <li>Real CI</li>
+            <li>Integrate with users and data</li>
+          </ul>
+        </section>     
         <section>
           <h2>Promotion</h2>
           <p><strike>Business</strike> Dev decides when to deploy</p>
@@ -207,16 +222,6 @@
         
         <section>
 		      <img src="./should_i_deploy_fixed.jpg" height="600px"/>
-        </section>
-        
-        <section>
-          <h2>No Branching</h2>
-          <ul>
-            <li>No long lived feature branches</li>
-            <li>No pushed branches</li>
-            <li>Real CI</li>
-            <li>Integrate with users and data</li>
-          </ul>
         </section>
         
         <section class="medium">
@@ -381,7 +386,8 @@ public class AnalyticsWeb {{
         </section>
 
         <section>
-          <h2>Cronned Code Deletion</h2>
+          <h2>Phoenix Workstations</h2>
+          <p>Cronned Code Deletion</p>
         </section>
 
         <!-- TEAM/PRODUCT SCALING -->
